@@ -1,19 +1,32 @@
-.count {
-    position: relative;
-    left: 30%;
-    top: 200px;
-    height: 100%;
-    width: 38%;
+/* * {
+    box-sizing: border-box;
+  } */
+
+.wrapp {
     border: 3px rgb(57, 58, 82) solid;
     border-radius: 10px;
     background-color:#181824;
-    
-    
+    padding: 0 30px;
 }
 
-.form-value {
+.value {
     margin: 35px 100px ;
 }
+
+@media only screen and (max-width: 550px) {
+    .wrapp {
+      margin: auto;
+      padding: 6px;
+    }
+    .value {
+        margin: 15px 50px;
+    }
+    .buttons {
+        display: grid;
+    }
+
+  }
+
 
 .current-value {
     background-color: #25273C;
@@ -21,8 +34,8 @@
     color: #f8f9fa;
     border: 3px  #34364d solid;
     border-radius: 10px;
-    
 }
+
 
 .button-increase {
     
@@ -33,7 +46,6 @@
     padding: .300rem .70rem;
     font-size: 1rem;
     border-radius: .25rem;
-    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
     color: #000;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
@@ -49,7 +61,6 @@
     padding: .300rem .70rem;
     font-size: 1rem;
     border-radius: .25rem;
-    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
     color: #000;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
@@ -65,7 +76,6 @@
     padding: .300rem .70rem;
     font-size: 1rem;
     border-radius: .25rem;
-    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
     color: #000;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
@@ -73,6 +83,3 @@
     margin: .25rem .125rem;
 }
 
-input {
-    
-}

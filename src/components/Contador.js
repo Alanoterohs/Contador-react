@@ -6,11 +6,12 @@ export default function Contador() {
 const [count, setCount] = useState(0);
   
     return(
-        <div className= "count">
-            <form className="form-value">
+        <div className= "wrapp">
+            <main className="value">
                <div className="current-value"> 
                <p>Current number: {count}</p>
                </div>
+               <div className= "buttons">
                <input
                className="button-decrease"
                type = "button"
@@ -21,15 +22,13 @@ const [count, setCount] = useState(0);
                type = "button"
                value = "Reset"
                onClick= {() => setCount(0)}/>
-              
                <input
                className="button-increase"
                type = "button"
                value = "Increase"
-               onClick= {() => setCount(count + 1)}/>
-               
-             
-            </form>
+               onClick= {() => setCount(count + 1)}/>             
+               </div> 
+            </main>
         </div>
     );
 
